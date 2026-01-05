@@ -105,7 +105,7 @@ Uncaught SyntaxError: Unexpected token 'of'
 
 
  //Array 
- //array is a datastructure it is used to store thhe data.
+ //array is a datastructure it is used to store the data.
  //In javascript array can be store diffrent types of data for example it can be string, number etc.
  //here indexing starts from 0.
  //we can find the length of array using the built in property .length.
@@ -149,3 +149,4 @@ function add(num1, num2){
     // return addition;
 }
 console.log(add(2,4));//undefined
+
