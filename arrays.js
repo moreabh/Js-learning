@@ -344,20 +344,26 @@
 
 //Reducing an array 
 
-const numbers = [1, 10, 5, 14];
-// let sum = 0;
+                                    const numbers = [1, 10, 5, 14];
+                                    // let sum = 0;
 
-// for(const num of numbers){
-//     sum += num;
-// }
+                                    // for(const num of numbers){
+                                    //     sum += num;
+                                    // }
 
-// console.log(`Total sum: ${sum}`);//Total sum: 30
+                                    // console.log(`Total sum: ${sum}`);//Total sum: 30
 
-// const sum = numbers.reduce((accumulator, currentValue) =>{
-//     return accumulator + currentValue; },0);
+                                    // const sum = numbers.reduce((accumulator, currentValue) =>{
+                                    //     return accumulator + currentValue; },0);
 
-// console.log(`sum: ${sum}`); //sum: 30
+                                    // console.log(`sum: ${sum}`); //sum: 30
 
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+                                    const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
 
-console.log(`sum: ${sum}`);//sum: 30
+                                    console.log(`sum: ${sum}`);//sum: 30
+
+                                    /* 
+                                    -reducing an array in Javascript is the process of combining all elements of an array into a single accumulated value by repeatedly applying a function.
+                                    -this is done by using the .reduce() method.
+                                    -single accumulated value can be number, string, object or another.
+                            */
