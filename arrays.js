@@ -265,21 +265,99 @@
 
 //Testing the elements of an array 
 
-const numbers = [2,4,6,8,10];
+                                        // const numbers = [2,4,6,8,10];
 
-const areAllEven = numbers.every(number => {
-    return number % 2 === 0; 
-});
+                                        // const areAllEven = numbers.every(number => {
+                                        //     return number % 2 === 0; 
+                                        // });
 
-console.log(`areAllEven: ${areAllEven}`);//areAllEven: true
-
-
-const numbers2 = [1,3,5,7,8,9];
-
-const hasOneEvenNumber = numbers.some(number => number % 2 ===0);
-console.log(`hasOneEvenNumber: ${hasOneEvenNumber}`);//hasOneEvenNumber: true
+                                        // console.log(`areAllEven: ${areAllEven}`);//areAllEven: true
 
 
+                                        // const numbers2 = [1,3,5,7,8,9];
 
+                                        // const hasOneEvenNumber = numbers.some(number => number % 2 ===0);
+                                        // console.log(`hasOneEvenNumber: ${hasOneEvenNumber}`);//hasOneEvenNumber: true
 
+//Filtering an array
 
+                                        // const numbers = [1,2,3,4,5,6];
+                                        // const evenNumbers   =   numbers.filter(number => number % 2 === 0);
+
+                                        // console.log(evenNumbers); //[ 2, 4, 6 ]
+
+                                        // const employees = [
+
+                                        //     {id: 1, name:'Alice', role:'developer'},
+                                        //     {id: 2, name:'Bob', role:'designer'},
+                                        //     {id: 3, name:'charlie', role:'developer'},
+                                        //     {id: 4, name:'Denver', role:'Manager'}
+                                        // ];
+
+                                        // const developers = employees.filter(employee => employee.role ==='developer');
+                                        // console.log(developers);
+                                        /*
+                                        [
+                                        { id: 1, name: 'Alice', role: 'developer' },
+                                        { id: 3, name: 'charlie', role: 'developer' }
+                                        ] */
+
+//Mapping An array 
+
+                                        // const numbers = [2,4,6,8,10];
+
+                                        // const squareNumbers = numbers.map(num => num*num );
+                                        // console.log(squareNumbers);//[ 4, 16, 36, 64, 100 ]
+
+                                        // const characters = ['a','b','c','d'];
+                                        // const upperCaseCharacter = characters.map(char => char.toUpperCase());
+                                        // console.log(upperCaseCharacter);//[ 'A', 'B', 'C', 'D' ]
+
+                                        // const employees = [
+
+                                        //     {id:1, name:'Alice', email:'AliCe@gmail.com'},
+                                        //     {id:2, name:'BOb', email:'BOB@gmail.com'},
+                                        //     {id:3, name:'Jof', email:'JOf@gmail.com'}
+                                        // ];                                       
+
+                                        // const updatedEmployees = employees.map(employee => ({
+
+                                        //     ...employee,
+                                        //     email:  employee.email.toLowerCase()
+                                        // }));
+
+                                    // console.log(updatedEmployees);
+                                    /*
+                                    [
+                                    { id: 1, name: 'Alice', email: 'alice@gmail.com' },
+                                    { id: 2, name: 'BOb', email: 'bob@gmail.com' },
+                                    { id: 3, name: 'Jof', email: 'jof@gmail.com' }
+                                    ] */
+
+                                    // console.log(employees);
+                                    /*
+                                    [
+                                    { id: 1, name: 'Alice', email: 'AliCe@gmail.com' },
+                                    { id: 2, name: 'BOb', email: 'BOB@gmail.com' },
+                                    { id: 3, name: 'Jof', email: 'JOf@gmail.com' }
+                                    ] */
+
+//Reducing an array 
+
+const numbers = [1, 10, 5, 14];
+// let sum = 0;
+
+// for(const num of numbers){
+//     sum += num;
+// }
+
+// console.log(`Total sum: ${sum}`);//Total sum: 30
+
+// const sum = numbers.reduce((accumulator, currentValue) =>{
+//     return accumulator + currentValue; },0);
+
+// console.log(`sum: ${sum}`); //sum: 30
+
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+
+console.log(`sum: ${sum}`);//sum: 30
